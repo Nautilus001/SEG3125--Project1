@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ketchup Tasting Business</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="titletext">
+          <h1>Ketchup Tasting International</h1>
+          <p>Located at 123 Street Avenue, Ottawa</p>
+          <p>978.491.9344</p>
+        </div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#experts">Experts</a></li>
+          <li><a href="#booking">Book Appointment</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="container">
+        <h2>Discover the Art of Ketchup Tasting</h2>
+        <p>Experience a journey of flavors and indulge in the finest ketchup selections.</p>
+        <a href="#booking" class="btn">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor, velit non dignissim luctus, nunc nisi bibendum est, vel fringilla risus nunc eget mauris.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service">
+        <img src="service-1.jpg" alt="Service 1">
+        <h3>Ketchup Tasting Experience</h3>
+        <p>Indulge in a guided ketchup tasting session where you'll explore a variety of flavors and learn about their unique characteristics.</p>
+        <p class="price">$20 per person</p>
+      </div>
+      <div class="service">
+        <img src="service-2.jpg" alt="Service 2">
+        <h3>Ketchup Pairing Workshop</h3>
+        <p>Discover the art of pairing ketchup with different dishes and learn tips and tricks for enhancing flavors.</p>
+        <p class="price">$30 per person</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experts">
+    <div class="container">
+      <h2>Meet Our Experts</h2>
+      <div class="expert">
+        <img src="expert-1.jpg" alt="Expert 1">
+        <h3>John Smith</h3>
+        <p>Specialty: Artisanal ketchup creations</p>
+      </div>
+      <div class="expert">
+        <img src="expert-2.jpg" alt="Expert 2">
+        <h3>Jane Doe</h3>
+        <p>Specialty: International ketchup flavors</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <div class="container">
+      <h2>Book an Appointment</h2>
+      <form id="booking-form">
+        <div class="form-group">
+          <label for="service">Select a Service:</label>
+          <select id="service" name="service">
+            <option value="tasting">Ketchup Tasting Experience</option>
+            <option value="pairing">Ketchup Pairing Workshop</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="expert">Select an Expert:</label>
+          <select id="expert" name="expert">
+            <option value="john">John Smith</option>
+            <option value="jane">Jane Doe</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="datetime">Select a Date and Time:</label>
+          <input type="datetime-local" id="datetime" name="datetime">
+        </div>
+
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <button type="submit" class="btn">Book Appointment</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Ketchup Tasting Business. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
