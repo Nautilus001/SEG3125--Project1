@@ -20,7 +20,7 @@ appointmentForm.addEventListener('submit', function(e) {
   };
 
   // Perform any necessary validation
-
+  window.alert('Thank you for submitting the form! We will get in touch with you shortly.');
   // Send the appointment details to a server or perform other actions
   // Example: You can make an AJAX request to a backend endpoint to save the appointment details
 

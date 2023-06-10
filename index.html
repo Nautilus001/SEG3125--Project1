@@ -4,121 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ketchup Tasting Business</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="carousel.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
-    <nav>
-      <div class="container">
-        <div class="titletext">
-          <h1>Ketchup Tasting International</h1>
-          <p>Located at 123 Street Avenue, Ottawa</p>
-          <p>978.491.9344</p>
-        </div>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#experts">Experts</a></li>
-          <li><a href="#booking">Book Appointment</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="hero">
-      <div class="container">
-        <h2>Discover the Art of Ketchup Tasting</h2>
-        <p>Experience a journey of flavors and indulge in the finest ketchup selections.</p>
-        <a href="#booking" class="btn">Book Now</a>
-      </div>
-    </div>
+    <h1>Welcome to our Ketchup Tasting Business</h1>
   </header>
+  
+  <nav>
+    <a href="#carousel">Images</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#experts">Our Experts</a>
+    <a href="#booking">Book a Session</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="carousel">
+    <div class="carousel">
+      <img src="img1.jpg" alt="Image 1">
+      <img src="img2.jpg" alt="Image 2">
+      <img src="img3.jpg" alt="Image 3">
+    </div>
+
+    <div class="card-overlay">
+      <h3>Contact Information</h3>
+      <p>Phone: 123-456-7890</p>
+      <p>Open Hours: Monday to Friday, 9am - 5pm</p>
+      <p>Address: 123 Ketchup Street, Tomato City</p>
+    </div>
+  </section>
 
   <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor, velit non dignissim luctus, nunc nisi bibendum est, vel fringilla risus nunc eget mauris.</p>
-    </div>
+    <h2>About Us</h2>
+    <p>We are passionate about ketchup and offer professional ketchup tasting services. Our team of experts will guide you through a variety of ketchup flavors and help you discover your favorites. Whether you're a ketchup enthusiast or just curious, our tasting sessions are designed to provide a unique and flavorful experience.</p>
   </section>
 
   <section id="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="service">
-        <img src="service-1.jpg" alt="Service 1">
-        <h3>Ketchup Tasting Experience</h3>
-        <p>Indulge in a guided ketchup tasting session where you'll explore a variety of flavors and learn about their unique characteristics.</p>
-        <p class="price">$20 per person</p>
-      </div>
-      <div class="service">
-        <img src="service-2.jpg" alt="Service 2">
-        <h3>Ketchup Pairing Workshop</h3>
-        <p>Discover the art of pairing ketchup with different dishes and learn tips and tricks for enhancing flavors.</p>
-        <p class="price">$30 per person</p>
-      </div>
-    </div>
+    <h2>Our Services</h2>
+    <ul>
+      <li>Tasting sessions for individuals and groups</li>
+      <li>Customized ketchup recommendations</li>
+      <li>Educational workshops on ketchup production</li>
+      <li>Ketchup pairing suggestions</li>
+    </ul>
   </section>
 
   <section id="experts">
-    <div class="container">
-      <h2>Meet Our Experts</h2>
-      <div class="expert">
-        <img src="expert-1.jpg" alt="Expert 1">
-        <h3>John Smith</h3>
-        <p>Specialty: Artisanal ketchup creations</p>
+    <h2>Our Experts</h2>
+    <div class="expert">
+      <div class="card">
+        <img src="expert1.jpg" alt="Expert 1">
+        <h3>Expert 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor nibh velit, et lobortis sem mattis et.</p>
       </div>
-      <div class="expert">
-        <img src="expert-2.jpg" alt="Expert 2">
-        <h3>Jane Doe</h3>
-        <p>Specialty: International ketchup flavors</p>
+      <div class="card">
+        <img src="expert2.jpg" alt="Expert 2">
+        <h3>Expert 2</h3>
+        <p>Nullam ut faucibus dui, in interdum erat. Phasellus posuere aliquet nulla, nec vulputate neque malesuada id.</p>
+      </div>
+      <div class="card">
+        <img src="expert3.jpg" alt="Expert 3">
+        <h3>Expert 3</h3>
+        <p>Vivamus eu scelerisque justo. Cras tristique, ipsum ut blandit commodo, lorem augue condimentum orci.</p>
       </div>
     </div>
   </section>
 
   <section id="booking">
-    <div class="container">
-      <h2>Book an Appointment</h2>
-      <form id="booking-form">
-        <div class="form-group">
-          <label for="service">Select a Service:</label>
-          <select id="service" name="service">
-            <option value="tasting">Ketchup Tasting Experience</option>
-            <option value="pairing">Ketchup Pairing Workshop</option>
-          </select>
-        </div>
+    <h2>Book a Session</h2>
+    <div class="booking-form">
+      <form id="appointmentForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-        <div class="form-group">
-          <label for="expert">Select an Expert:</label>
-          <select id="expert" name="expert">
-            <option value="john">John Smith</option>
-            <option value="jane">Jane Doe</option>
-          </select>
-        </div>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-        <div class="form-group">
-          <label for="datetime">Select a Date and Time:</label>
-          <input type="datetime-local" id="datetime" name="datetime">
-        </div>
+        <label for="service">Select a Service:</label>
+        <select id="service" name="service" required>
+          <option value="">-- Select a service --</option>
+          <option value="tasting">Ketchup Tasting</option>
+          <option value="recommendations">Customized Recommendations</option>
+          <option value="workshop">Educational Workshop</option>
+          <option value="pairing">Ketchup Pairing Suggestions</option>
+        </select>
 
-        <div class="form-group">
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
 
-        <div class="form-group">
-          <label for="email">Your Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
+        <label for="message">Additional Message:</label>
+        <textarea id="message" name="message" placeholder="Enter any additional information or questions"></textarea>
 
-        <button type="submit" class="btn">Book Appointment</button>
+        <input type="submit" value="Submit">
       </form>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Ketchup Tasting Business. All rights reserved.</p>
-    </div>
-  </footer>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>For inquiries or bookings, please reach out to us:</p>
+    <p>Email: info@ketchuptasting.com</p>
+    <p>Phone: 123-456-7890</p>
+  </section>
 
-  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2023 Ketchup Tasting Business. All rights reserved.</p>
+  </footer>
 </body>
 </html>
